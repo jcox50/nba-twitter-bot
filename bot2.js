@@ -1,4 +1,4 @@
-var twit = require("twit");
+/*var twit = require("twit");
 
 
 var Bot = new twit({
@@ -19,4 +19,4 @@ stream.on('tweet', function(tweet) {
             console.log(data)
         })
     }
-})
+})*/
