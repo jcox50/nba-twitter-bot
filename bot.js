@@ -10,11 +10,11 @@ var Bot = new Twit({
     access_token_secret: process.env.BOT_ACCESS_TOKEN_SECRET
 });
 
-var users = ["50323173", "178580925", "17292143", "2352759108", "193095044", "48488561"];
+var users = ["50323173", "178580925", "17292143", "2352759108", "193095044", "48488561", "13850422"];
 
 var stream = Bot.stream('statuses/filter', { follow: users });
 
-console.log("reached here")
+console.log("reached here");
 
 stream.on('tweet', function(tweet) {
     if (users.indexOf(tweet.user.id_str) > -1) {
@@ -25,4 +25,4 @@ stream.on('tweet', function(tweet) {
     }
 })
 
-console.log("reached here after stream code")
+console.log("reached here after stream code");
