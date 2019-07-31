@@ -10,7 +10,7 @@ var Bot = new Twit({
     access_token_secret: process.env.BOT_ACCESS_TOKEN_SECRET
 });
 
-var users = ["50323173", "178580925", "17292143", "2352759108", "193095044", "48488561", "13850422"];
+var users = ["50323173", "178580925", "17292143", "2352759108", "193095044", "48488561", "13850422", "759251"];
 
 var stream = Bot.stream('statuses/filter', { follow: users });
 
